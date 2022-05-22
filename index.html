@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Instagram',     11],
+            ['Crimes',      5],
+            ['Snapchat',  8],
+            ['Sleep', 25],
+            ['Eat',    7]
+            ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <section class="Img">
+        <div class="photo-area">
+            <nav>
+                <div class="nav-text">Portfolio</div><hr>
+            </nav>
+
+            <div class="intro">
+                <div class="hi"><h2>Hello There!</h2></div>
+                <div class="intro2"><div class="iam">I am <span class="name">Shakshi</span></div></div>
+                <div class="person"><img src="img/human.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="HOME">
+        <div class="home self">
+            <h1>About</h1>
+            <hr>
+            <p>I am Shakshi. I don't know exactly how old I am but rumors say not less than 100 on average. I'm a girl not a Bear. I am in college where I made so many friends excluding a Tanmay guy. I have a great educational degree of I.T.U.S. Besides that my super cool handsome smart 200iq cousins call me....Three Man Army (Im more than 3 tho).</p>
+        </div>
+        <div class="hobby self">
+            <h1>Hobbies</h1>
+            <hr>
+            <p>
+                Even being 150 years old... I have some cool hobbies you wont believe. Its not eating humans but elephants very cool ik.
+            </p>
+        </div>
+
+        <div class="chart self">
+            <div id="donutchart" style="width: 100%;"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact">
+            <div class="contactme">
+                <h1>Contact me</h1>
+            </div>
+
+            <hr>
+
+            <div class="mail">
+                
+                <div class="dess"><p>Name :</p><input type="text"></div>
+
+                <div class="dess"><p>Email:</p><input type="text"></div>
+
+                <div class="dess"><p>Desc :</p><input type="text"></div>
+
+                <div class="button"><button><a href="rickroll.html">Send</a></button></div>
+
+            </div>
+        </div>
+    </section>
+    
+<script src="index.js"></script>
+</body>
+</html>
