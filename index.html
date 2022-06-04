@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Instagram',     11],
+            ['Crimes',      5],
+            ['Snapchat',  8],
+            ['Sleep', 25],
+            ['Eat',    7]
+            ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+    <div class="mycontainer">
+    <section class="Img">
+        <div class="photo-area">
+            <nav>
+                <div class="nav-text">Portfolio</div><hr>
+            </nav>
+
+            <div class="intro">
+                <div class="hi"><h2>Hello There!</h2></div>
+                <div class="intro2"><div class="iam">I am <span class="name">Shakshi</span></div></div>
+                <div class="person"><img id="human" src="img/human.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="HOME">
+        <div class="home self">
+            <h1>About</h1>
+            <hr>
+            <p>I am Shakshi. I don't know exactly how old I am but rumors say not less than 100 on average. I'm a girl not a Bear. I am in college where I made so many friends excluding a Tanmay guy. I have a great educational degree of I.T.U.S. Besides that my super cool handsome smart 200iq cousins call me....Three Man Army (Im more than 3 tho).</p>
+        </div>
+        <div class="hobby self">
+            <h1>Hobbies</h1>
+            <hr>
+            <p>
+                Even being 150 years old... I have some cool hobbies you wont believe. Its not eating humans but elephants very cool ik.
+            </p>
+        </div>
+        <div class="Individuality self">
+            <h1>Individuality</h1>
+            <hr>
+            <p>
+                I am very sofhisticated typical critical cylindrical hypothetical plural cruel huge and most important that most people and dont belive (which seriously took me a long time to believe) is that I am HOOMAN.
+            </p>
+        </div>
+
+        <div class="chart self">
+            <div id="donutchart" style="width: 100%;"></div>
+        </div>
+    </section>
+</div>
+
+    <section>
+        <div class="contact">
+            <div class="contactme">
+                <h1>Contact me</h1>
+            </div>
+
+            <hr>
+
+            <div class="mail">
+                
+                <div class="dess"><p>Name :</p><input type="text"></div>
+
+                <div class="dess"><p>Email:</p><input type="text"></div>
+
+                <div class="dess"><p>Desc :</p><input type="text"></div>
+
+                <div class="button"><button><a href="rickroll.html">Send</a></button></div>
+
+            </div>
+        </div>
+    </section>
+
+    <a class="insta" id="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg> <span id="text">Bruh</span></a>
+
+<hr>
+
+      <div class="reviews">
+          <ul>
+              <li>
+                  <img class="p-img" src="img/p1.jpg">
+                  <br>
+                  <p>" She is a very gussel khatarnak aunty. "</p>
+                  <h4>Tunnu</h4>
+                  <hr>
+              </li>
+              <li>
+                <img class="p-img" src="img/p4.jpg">
+                <br>
+                <p>" Atyant hi khatarnak vishaal kaye prani. "</p><h4>Chanu</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p3.jpg">
+                <br>
+                <p>" oh no I cant say in front of everybody. "</p><h4>Rhythm</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p2.jpg">
+                <br>
+                <p>" mera naam dola h mai choti bachchi hu "</p><h4>Dola</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p5.jpg">
+                <br>
+                <p>" bla blah bla bla blah..... meri aachi didi h "</p><h4>Tanna</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p6.jpg">
+                <br>
+                <p>" nahi......................... pyari didi h.... wo ha. "</p><h4>Tishu</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p7.jpg">
+                <br>
+                <p>" ye bhi hamare saath zubaan kesari bolti hain. "</p><h4>Vimal Trios</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p8.jpg">
+                <br>
+                <p>" ye toh hamse bhi khatarnak hain. "</p><h4>NASA</h4>
+                <hr>
+            </li>
+            <li>
+                <img class="p-img" src="img/p9.jpg">
+                <br>
+                <p>" Very suspecious. "</p><h4>Amog us</h4>
+                <hr>
+            </li>
+            
+          </ul>
+      </div>
+
+
+    <script>
+    let human = document.getElementById("human")
+
+        var sound = new Audio("audio.mp3");
+        
+        human.addEventListener('click',()=>{
+            sound.currentTime = 0;
+            sound.play();
+        });
+        
+        let insta = document.getElementById("instagram");
+        let text = document.getElementById("text")
+        insta.addEventListener('click',()=>{
+            insta.style.justifyContent = 'left';   
+            text.style.visibility = "visible";
+        });
+        
+        
+
+        
+        
+        </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
